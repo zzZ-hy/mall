@@ -1,0 +1,90 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/member/member",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/news/news",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/category/main",
+			"style": {
+				"navigationBarTitleText": "商品列表",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/contact/contact",
+			"style": {
+				"navigationBarTitleText": "联系我们",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/goDetail/goDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "zhy-mall",
+		"navigationBarBackgroundColor": "#b50e03",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#ccc",
+		"selectedColor": "#1C1C1C",
+		// "backgroundColor":"#fff",
+		"borderStyle": "black",
+		// "position":"top",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/tab_bar_icon_SY_MR.png",
+				"selectedIconPath": "static/tabbar/tab_bar_icon_SY_Click.png"
+			},
+			{
+				"text": "咨询",
+				"pagePath": "pages/news/news",
+				"iconPath": "static/tabbar/tab_bar_icon_FW_MR.png",
+				"selectedIconPath": "static/tabbar/tab_bar_icon_FW_Click.png"
+			},
+			{
+				"text": "购物车",
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/tabbar/tab_bar_icon_YJ_MR.png",
+				"selectedIconPath": "static/tabbar/tab_bar_icon_YJ_Click.png"
+			},
+			{
+				"text": "会员",
+				"pagePath": "pages/member/member",
+				"iconPath": "./static/tabbar/tab_bar_icon_WD_MR.png",
+				"selectedIconPath": "./static/tabbar/tab_bar_icon_WD_Click.png"
+			}
+		]
+	}
+}
